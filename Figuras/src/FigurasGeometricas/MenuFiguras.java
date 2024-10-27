@@ -3,6 +3,7 @@ package FigurasGeometricas;
 import backend.Circulo;
 import java.util.Scanner;
 import backend.Rectangulo;
+import backend.Triangulo;
 
 public class MenuFiguras {
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class MenuFiguras {
         Scanner scanner = new Scanner(System.in);
         
         int opcion = 0;
+        char respuesta = 'S'; 
         
         while(opcion !=4){
             System.out.println("Menu de figuras geometricas");
@@ -30,6 +32,18 @@ public class MenuFiguras {
                     System.out.println("Circulo creado: " + circulo.toString());
                     break;
                 case 2:
+                    System.out.println("¿Desea crear un Triangulo por default? Si o No: ");
+                    respuesta = scanner.next().toUpperCase().charAt(0);
+                    if (respuesta == 'S'){
+                    Triangulo triangulo = Triangulo.crearTrianguloDefault();
+                    System.out.println("Triangulo creado: " + triangulo.toString());
+                    }
+                    else{
+                    Triangulo triangulo = Triangulo.crearTriangulo(scanner);
+                    System.out.println("Triangulo creado: " + triangulo.toString());
+                    }
+                    
+                    
                     break;
                 case 3:
                     Rectangulo rectangulo = Rectangulo.crearRectangulo(scanner);

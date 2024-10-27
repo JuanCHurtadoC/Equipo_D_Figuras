@@ -5,8 +5,8 @@ import java.util.Date;
 public class FiguraGeometrica {
     
     // atributos
-    private String color;
-    private boolean relleno;
+    protected String color;
+    protected boolean relleno;
     private Date fechaCreacion;
     
     // constructor

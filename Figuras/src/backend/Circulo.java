@@ -53,7 +53,7 @@ public class Circulo extends FiguraGeometrica {
     public String toString() {
         return "Círculo [Color: " + getColor() + ", Relleno: " + isRelleno() + 
                ", fecha de Creacion: " + getFechaCreacion() + 
-               "\nRadio = " + radio + "\nÁrea = " + calcularArea() + 
+               "\nRadio = " + radio + "\nÁrea = " + calcularArea() + " Unidades cuadradas" +
                "\nPerímetro = " + calcularPerimetro() + "]\n";
     }
 }

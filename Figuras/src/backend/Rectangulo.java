@@ -63,7 +63,7 @@ public class Rectangulo extends FiguraGeometrica{
     public String toString() {
         return "Rectangulo [Color:" + getColor() + ", relleno: " + isRelleno() + 
                ", Fecha de Creacion: " + getFechaCreacion() + 
-               "\nBase = " + base + "\nAltura = "+altura+"\nÁrea = " + calcularArea() + 
+               "\nBase = " + base + "\nAltura = "+altura+"\nÁrea = "  + calcularArea() + " Unidades cuadradas" +
                "\nPerimetro = " + calcularPerimetro() + "]";
     }
 }
