@@ -2,6 +2,7 @@ package FigurasGeometricas;
 
 import backend.Circulo;
 import java.util.Scanner;
+import backend.Rectangulo;
 
 public class MenuFiguras {
     public static void main(String[] args) {
@@ -31,6 +32,9 @@ public class MenuFiguras {
                 case 2:
                     break;
                 case 3:
+                    Rectangulo rectangulo = Rectangulo.crearRectangulo(scanner);
+                    
+                    System.out.println("Rectangulo creado: " + rectangulo.toString());
                     break;
                 case 4:
                     System.out.println("Gracias por utilizar el aplicativo");
